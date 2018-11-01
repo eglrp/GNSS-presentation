@@ -157,7 +157,7 @@ bool UTC::larger_than(UTC u1)
 				if (hour == u1.hour)
 					if (minute == u1.minute)
 						if (sec == u1.sec)
-							return false;
+							return true;
 						else if (sec > u1.sec) return true;
 						else return false;
 					else if (minute > u1.minute) return true;
